@@ -1,0 +1,24 @@
+version: "3"
+services:
+ mymongodb:
+   image: mongo:latest
+   container_name: "mymongodb"
+   ports:
+     - 27017:27017
+   hostname: localhost
+ mongo-client:
+    image: mongoclient/mongoclient
+    ports:
+    - 3030:3000
+    environment:
+      - MONGOCLIENT_DEFAULT_CONNECTION_URL=mongodb://mymongodb:27017
+    links:
+      - mymongodb
+ api-star-wars:
+   build: .
+   image: api-star-wars
+   container_name: api-star-wars
+   ports:
+     - 8080:8080
+   links:
+     - mymongodb    
