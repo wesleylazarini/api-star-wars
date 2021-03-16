@@ -4,7 +4,7 @@ Essa API Rest tem como objetivo atender ao desafio da B2W, para desenvolvedor ba
 
 ### API hospedada no Heroku
 
-- Link da documentação da API:
+- Link da documentação da API: https://api-desafio-sw.herokuapp.com/swagger-ui.html#/
 
 ### Tecnologias
 No projeto foram essas as tecnologias utilizadas:
@@ -52,6 +52,9 @@ mvn clean install
 Após executar esses comandos, tamem será executado todos os testes da aplicação.
 
 #### *Executando via Docker Compose
+
+Primeiro altere o profile no arquivo "application.properties", de 'prod' para 'dev'.
+
 ```sh
 docker-compose up
 ```
