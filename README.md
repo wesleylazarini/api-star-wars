@@ -59,8 +59,11 @@ Primeiro altere o profile no arquivo "application.properties", de 'prod' para 'd
 docker-compose up
 ```
 A API estará disponivel em http://localhost:8080/
+
 A documentação da API estará disponivel em http://localhost:8080/swagger-ui.html#/
+
 O MongoDB estará disponivel na porta 27017
+
 O client do MongoDB estará disponivel em http://localhost:3030/
 
 ** Para facilitar a execução dos serviços, utilize a pagina de documentação(Swagger) ou utilize essa url ``` http://localhost:8080/v2/api-docs ``` para importar a estrutura no [Postman].
